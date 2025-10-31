@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <section class="logo-name">
+        <i class="fa-solid fa-utensils"></i>
+        <span>RecipeHub</span>
+      </section>
+      <section class="faves-and-recipes-found">
+        <div class="favorites">
+          <p>Favorites</p>
+          <p>0</p>
+        </div>
+        <div class="recipes-found">
+          <p>Recipes Found</p>
+          <p>0</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Find Your Perfect Recipe Section -->
+      <section class="find-recipe">
+        <h2>
+          <i class="fa-solid fa-magnifying-glass"></i>Find Your Perfect Recipe
+        </h2>
+        <div class="search-by-type">
+          <button id="by-ingredients">
+            <i class="fa-solid fa-carrot"></i>By Ingredients
+          </button>
+          <button id="by-cuisine">
+            <i class="fa-solid fa-globe"></i>By Cuisine
+          </button>
+          <button id="dietary-restrictions">
+            <i class="fa-solid fa-leaf"></i>Dietary Restrictions
+          </button>
+          <button id="general-search">
+            <i class="fa-solid fa-magnifying-glass"></i>General Search
+          </button>
+        </div>
+        <div class="find-recipes-form">
+          <form action="/complete" method="post">
+            <input type="text" name="find-recipes" id="find-recipes" />
+          </form>
+          <button id="find-recipes-button"><i class="fa-solid fa-magnifying-glass"></i>Find Recipes</button>
+        </div>
+
+        <div>Popular Ingredients</div>
+      </section>
+      <!-- End Find Your Perfect Recipe Section -->
+
+      <section class="recipe-results"></section>
+      <section class="favorite-recipes"></section>
+    </main>
+  </body>
+</html>

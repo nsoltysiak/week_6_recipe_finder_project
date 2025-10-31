@@ -1,0 +1,161 @@
+/* Entire Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Archivo, sans-serif;
+}
+/* End Entire Page */
+
+
+/* Header Section */
+header
+{
+    background-color: rgb(206, 103, 20);
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-name
+{
+    font-size: 2rem;
+}
+
+.logo-name > i
+{
+    margin-right: 0.5rem;
+    
+}
+
+.faves-and-recipes-found
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.25rem
+}
+
+.faves-and-recipes-found > .favorites
+{
+    margin-right: 2.5rem;
+}
+
+.faves-and-recipes-found p
+{
+    margin: 0;
+}
+/* End Header Section */
+
+
+/* Find Your Perfect Recipe Section */
+.find-recipe
+{
+    background-color: rgb(249, 250, 252);
+    max-width: 90%;
+    margin: 2rem auto 0;
+    border-radius: 0.75rem;
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+.find-recipe h2
+{
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.find-recipe h2 i
+{
+    color: rgb(206, 103, 20);
+    margin-right: 0.5rem;
+}
+
+.find-recipe .search-by-type
+{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.find-recipe .search-by-type button
+{
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    width: 205px;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border: 1px solid gray;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.find-recipe .search-by-type button:hover
+{
+    color: white;
+    background-color: rgb(206, 103, 20);
+    border: 1px solid rgb(206, 103, 20);
+}
+
+.find-recipe .search-by-type button i
+{
+    margin-right: 0.5rem;
+}
+
+.find-recipes-form
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.find-recipe #find-recipes
+{
+    width: 600px;
+    border: 2px solid rgb(190, 188, 188);
+    background-color: rgb(253, 253, 253);
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.find-recipe #find-recipes:focus
+{
+    border: 2px solid rgb(206, 103, 20);
+    background-color: white;
+    outline: none;
+}
+
+.find-recipe #find-recipes-button
+{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(206, 103, 20);
+    color: white;
+    margin-left: 1rem;
+    font-weight: bold;
+    border: 1px solid rgb(206, 103, 20);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.find-recipe #find-recipes-button:hover
+{
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.find-recipe #find-recipes-button i
+{
+    margin-right: 0.5rem;
+}
+/* End Find Your Perfect Recipe Section */

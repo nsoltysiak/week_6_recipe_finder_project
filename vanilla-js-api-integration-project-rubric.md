@@ -20,15 +20,6 @@ Create a user-friendly recipe finder app that allows users to discover recipes u
 
 ## **Project-Specific Requirements**
 
-### **Option A - Stock Market Lookup App Must Include:**
-
-- [ ] **Stock Search Functionality** - Users can search for stocks by symbol or company name
-- [ ] **Real-Time Price Display** - Shows current stock prices, daily change, and percentage change
-- [ ] Users can enter how many shares of a stock they own and this is stored in local storage and track performance (shows total value of stocks owned)
-- [ ] **Portfolio Tracking** - Allow users to add stocks to watchlist
-- [ ] **Optional - Picker Modal** - User can pick from multiple items when there is a partial match
-- [ ] **Optional - More Stock Data** - Volume, High, Low, Open, or other data available
-
 ### **Option B - Recipe Finder App Must Include:**
 
 - [ ] **Recipe Search** - Users can search recipes by different types (i.e. ingredients, cuisine type, or dietary restrictions)
