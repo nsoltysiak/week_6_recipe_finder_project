@@ -9,12 +9,15 @@ const pasta = document.getElementById("ingredient-pasta");
 const tomato = document.getElementById("ingredient-tomato");
 const cheese = document.getElementById("ingredient-cheese");
 const garlic = document.getElementById("ingredient-garlic");
+const recipeResultsHeader = document.querySelector(".recipe-results-header");
+const findRecipesButton = document.getElementById("find-recipes-button");
 
 byIngredientsButton.addEventListener("click", displayByIngredients);
 byCuisineButton.addEventListener("click", displayByCuisine);
 dietaryRestrictionsButton.addEventListener("click", displayByDietary);
 generalSearchButton.addEventListener("click", displayByGeneral);
 valueTextInForm.addEventListener("click", clearInput);
+findRecipesButton.addEventListener("click", getRecipes);
 chicken.addEventListener("click", addInput);
 pasta.addEventListener("click", addInput);
 tomato.addEventListener("click", addInput);
@@ -106,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dietaryRow.style.display = "none";
   generalRow.style.display = "none";
   findRecipeInput.value = "";
+//   recipeResultsHeader.style.display = "none";
 });
 
 
@@ -119,4 +123,22 @@ function addInput(event)
 {
     const ingredient = event.target.textContent.trim();
     findRecipeInput.value = ingredient;
+}
+
+async function getRecipes()
+{
+    const url = "https://www.themealdb.com/api/json/v1/1/filter.php";
+    try
+    {
+        const response = await fetch();
+        if (response.ok)
+        {
+            const jsonResponse = await response.json();
+            // Code to execute here
+        }
+    }
+    catch (error)
+    {
+        console.log(error);
+    }
 }
