@@ -70,6 +70,7 @@ header
 .find-recipe h2
 {
     font-weight: bold;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -87,7 +88,7 @@ header
     justify-content: space-evenly;
 }
 
-.find-recipe .search-by-type button
+.search-by-type-button
 {
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
@@ -98,7 +99,14 @@ header
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.find-recipe .search-by-type button:hover
+.search-by-type-button:hover
+{
+    color: white;
+    background-color: rgb(206, 103, 20);
+    border: 1px solid rgb(206, 103, 20);
+}
+
+.find-recipe-button-active
 {
     color: white;
     background-color: rgb(206, 103, 20);
@@ -125,7 +133,6 @@ header
     background-color: rgb(253, 253, 253);
     border-radius: 8px;
     padding: 0.5rem;
-    font-size: 1.1rem;
 }
 
 .find-recipe #find-recipes:focus
@@ -155,6 +162,125 @@ header
 }
 
 .find-recipe #find-recipes-button i
+{
+    margin-right: 0.5rem;
+}
+
+.popular-ingredients
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.popular-ingredients button
+{
+    padding: 0.25rem 0.5rem;
+    margin-left: 1rem;
+    border-radius: 0.75rem;
+    width: 90px;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border: 1px solid gray;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.popular-ingredients button:hover
+{
+    background-color: rgb(197, 195, 193);
+}
+
+.find-recipes-cuisine-row, .find-recipes-dietary
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.find-recipes-cuisine-row button, .find-recipes-dietary button
+{
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+    width: 125px;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border: 1px solid gray;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.find-recipes-cuisine-row i, .find-recipes-dietary i
+{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: rgb(206, 103, 20);
+    transition: color 0.2s ease;
+}
+
+.find-recipes-cuisine-row button:hover, .find-recipes-dietary button:hover
+{
+    color: white;
+    background-color: rgb(206, 103, 20);
+    border: 1px solid rgb(206, 103, 20);
+}
+
+.find-recipes-cuisine-row button:hover i, .find-recipes-dietary button:hover i
+{
+    color: white;
+}
+
+.find-recipes-general
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.find-recipes-general input[type="text"]
+{
+    color: rgb(187, 185, 185);
+}
+
+#find-recipes-gen
+{
+    width: 600px;
+    border: 2px solid rgb(190, 188, 188);
+    background-color: rgb(253, 253, 253);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+#find-recipes-gen:focus
+{
+    border: 2px solid rgb(206, 103, 20);
+    background-color: white;
+    outline: none;
+}
+
+#find-recipes-gen-button
+{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(206, 103, 20);
+    color: white;
+    margin-left: 1rem;
+    font-weight: bold;
+    border: 1px solid rgb(206, 103, 20);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#find-recipes-gen-button:hover
+{
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border: 1px solid rgb(66, 66, 66);
+}
+
+#find-recipes-gen-button i
 {
     margin-right: 0.5rem;
 }

@@ -52,32 +52,141 @@
         <h2>
           <i class="fa-solid fa-magnifying-glass"></i>Find Your Perfect Recipe
         </h2>
+
         <div class="search-by-type">
-          <button id="by-ingredients">
+          <button class="search-by-type-button" id="by-ingredients">
             <i class="fa-solid fa-carrot"></i>By Ingredients
           </button>
-          <button id="by-cuisine">
+          <button class="search-by-type-button" id="by-cuisine">
             <i class="fa-solid fa-globe"></i>By Cuisine
           </button>
-          <button id="dietary-restrictions">
+          <button class="search-by-type-button" id="dietary-restrictions">
             <i class="fa-solid fa-leaf"></i>Dietary Restrictions
           </button>
-          <button id="general-search">
+          <button class="search-by-type-button" id="general-search">
             <i class="fa-solid fa-magnifying-glass"></i>General Search
           </button>
         </div>
-        <div class="find-recipes-form">
-          <form action="/complete" method="post">
-            <input type="text" name="find-recipes" id="find-recipes" />
-          </form>
-          <button id="find-recipes-button"><i class="fa-solid fa-magnifying-glass"></i>Find Recipes</button>
-        </div>
 
-        <div>Popular Ingredients</div>
+        <!-- By Ingredient Section -->
+        <div class="find-recipes-ingredient-row">
+          <div class="find-recipes-form">
+            <form action="/complete" method="post">
+              <input type="text" name="find-recipes" id="find-recipes" />
+            </form>
+            <button id="find-recipes-button">
+              <i class="fa-solid fa-magnifying-glass"></i>Find Recipes
+            </button>
+          </div>
+
+          <div class="popular-ingredients">
+            <span>Popular Ingredients:</span>
+            <button id="ingredient-chicken">Chicken</button>
+            <button id="ingredient-pasta">Pasta</button>
+            <button id="ingredient-tomato">Tomato</button>
+            <button id="ingredient-cheese">Cheese</button>
+            <button id="ingredient-garlic">Garlic</button>
+          </div>
+        </div>
+        <!-- End By Ingredient Section -->
+
+        <!-- By Cuisine Section -->
+        <div class="find-recipes-cuisine-row">
+          <button id="cuisine-italian">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <br />
+            Italian
+          </button>
+          <button id="cuisine-mexican">
+            <i class="fa-solid fa-pepper-hot"></i>
+            <br />
+            Mexican
+          </button>
+          <button id="cuisine-asian">
+            <i class="fa-solid fa-earth-asia"></i>
+            <br />
+            Asian
+          </button>
+          <button id="cuisine-american">
+            <i class="fa-solid fa-burger"></i>
+            <br />
+            American
+          </button>
+          <button id="cuisine-indian">
+            <i class="fa-solid fa-mortar-pestle"></i>
+            <br />
+            Indian
+          </button>
+          <button id="cuisine-mediterranean">
+            <i class="fa-solid fa-fish-fins"></i>
+            <br />
+            Mediterranean
+          </button>
+        </div>
+        <!-- End By Cuisine Section -->
+
+        <!-- By Dietary Section -->
+        <div class="find-recipes-dietary">
+          <button id="dietary-vegetarian">
+            <i class="fa-solid fa-fish"></i>
+            <br />
+            Vegetarian
+          </button>
+          <button id="dietary-vegan">
+            <i class="fa-solid fa-seedling"></i>
+            <br />
+            Vegan
+          </button>
+          <button id="dietary-gluten-free">
+            <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+            <br />
+            Gluten-Free
+          </button>
+          <button id="dietary-dairy-free">
+            <i class="fa-solid fa-cow"></i>
+            <br />
+            Dairy-Free
+          </button>
+          <button id="dietary-keto">
+            <i class="fa-solid fa-dumbbell"></i>
+            <br />
+            Keto
+          </button>
+          <button id="dietary-paleo">
+            <i class="fa-solid fa-egg"></i>
+            <br />
+            Paleo
+          </button>
+        </div>
+        <!-- End By Dietary Section -->
+
+        <!-- By General Search Section -->
+        <div class="find-recipes-general">
+          <form action="/complete" method="post">
+            <input
+              type="text"
+              value="Search for any recipe (e.g. chocolate cake, beef stew, etc.)"
+              name="find-recipes-gen"
+              id="find-recipes-gen"
+            />
+          </form>
+          <button id="find-recipes-gen-button">
+            <i class="fa-solid fa-magnifying-glass"></i>Search Recipes
+          </button>
+        </div>
+        <!-- End By General Search Section -->
       </section>
       <!-- End Find Your Perfect Recipe Section -->
 
-      <section class="recipe-results"></section>
+
+      <!-- Recipe Results Section -->
+      <section class="recipe-results">
+        
+      </section>
+      <!-- End Recipe Results Section -->
+
+
+
       <section class="favorite-recipes"></section>
     </main>
   </body>

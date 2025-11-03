@@ -10,9 +10,6 @@ Note: Consider using this as a starting point for the API(s) you use https://git
 
 ### Project Options
 
-**Option A: Stock Market Lookup App**  
-Build an application that fetches stock data via an API, displays with search functionality, allows for favorites tracking (using localStorage), and provides a way to list and filter multiple stocks if there are multiple matches during search.
-
 **Option B: Recipe Finder App**  
 Create a user-friendly recipe finder app that allows users to discover recipes using an external API. It includes features for searching, saving favorite recipes in local storage, and displaying detailed recipe information.
 
