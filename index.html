@@ -41,12 +41,34 @@
         </div>
         <div class="recipes-found">
           <p>Recipes Found</p>
-          <p>0</p>
+          <p id="recipesFoundCount">0</p>
         </div>
       </section>
     </header>
 
     <main>
+      <!-- Enter API Key -->
+      <div class="api-key-entry" id="apiKeyEntry">
+        <h3>Enter your Spoonacular API Key</h3>
+        <p>
+          Get a free key at
+          <a
+            href="https://spoonacular.com/food-api/console/#Dashboard"
+            target="_blank"
+            >Spoonacular</a
+          >
+        </p>
+
+        <input
+          type="text"
+          id="apiKeyInput"
+          placeholder="Paste your API key here"
+          autocomplete="off"
+        />
+
+        <button id="saveApiKeyBtn">Save API Key</button>
+      </div>
+      <!-- End Enter API Key -->
       <!-- Find Your Perfect Recipe Section -->
       <section class="find-recipe">
         <h2>
@@ -178,20 +200,74 @@
       </section>
       <!-- End Find Your Perfect Recipe Section -->
 
-
       <!-- Recipe Results Section -->
       <section class="recipe-results-header">
-        <h2>
-          <i class="fa-solid fa-utensils"></i>Recipe Results
-        </h2>
+        <h2><i class="fa-solid fa-utensils"></i>Recipe Results</h2>
       </section>
 
       <section class="recipe-results">
+        <!-- Remove below code when api call works -->
+        <div class="recipe-card">
+          <img
+            src="https://placehold.co/312x231"
+            alt="312x231"
+            width="312"
+            height="231"
+          />
+          <h5>Classic Chicken Parmesan</h5>
+          <div class="recipe-card-info">
+            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
+            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
+            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
+            <p><i class="fa-solid fa-star"></i>3.0</p>
+            <div class="favorite-and-view-recipe">
+              <i class="fa-regular fa-heart"></i>
+              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card">
+          <img
+            src="https://placehold.co/312x231"
+            alt="312x231"
+            width="312"
+            height="231"
+          />
+          <h5>Classic Chicken Parmesan</h5>
+          <div class="recipe-card-info">
+            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
+            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
+            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
+            <p><i class="fa-solid fa-star"></i>3.0</p>
+            <div class="favorite-and-view-recipe">
+              <i class="fa-regular fa-heart"></i>
+              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card">
+          <img
+            src="https://placehold.co/312x231"
+            alt="312x231"
+            width="312"
+            height="231"
+          />
+          <h5>Classic Chicken Parmesan</h5>
+          <div class="recipe-card-info">
+            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
+            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
+            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
+            <p><i class="fa-solid fa-star"></i>3.0</p>
+            <div class="favorite-and-view-recipe">
+              <i class="fa-regular fa-heart"></i>
+              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Remove above code when api call works -->
       </section>
       <!-- End Recipe Results Section -->
-
-
 
       <section class="favorite-recipes"></section>
     </main>
