@@ -37,7 +37,7 @@
       <section class="faves-and-recipes-found">
         <div class="favorites">
           <p>Favorites</p>
-          <p>0</p>
+          <p id="favoritesFoundCount">0</p>
         </div>
         <div class="recipes-found">
           <p>Recipes Found</p>
@@ -205,71 +205,18 @@
         <h2><i class="fa-solid fa-utensils"></i>Recipe Results</h2>
       </section>
 
-      <section class="recipe-results">
-        <!-- Remove below code when api call works -->
-        <div class="recipe-card">
-          <img
-            src="https://placehold.co/312x231"
-            alt="312x231"
-            width="312"
-            height="231"
-          />
-          <h5>Classic Chicken Parmesan</h5>
-          <div class="recipe-card-info">
-            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
-            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
-            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
-            <p><i class="fa-solid fa-star"></i>3.0</p>
-            <div class="favorite-and-view-recipe">
-              <i class="fa-regular fa-heart"></i>
-              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
-            </div>
-          </div>
-        </div>
-        <div class="recipe-card">
-          <img
-            src="https://placehold.co/312x231"
-            alt="312x231"
-            width="312"
-            height="231"
-          />
-          <h5>Classic Chicken Parmesan</h5>
-          <div class="recipe-card-info">
-            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
-            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
-            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
-            <p><i class="fa-solid fa-star"></i>3.0</p>
-            <div class="favorite-and-view-recipe">
-              <i class="fa-regular fa-heart"></i>
-              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
-            </div>
-          </div>
-        </div>
-        <div class="recipe-card">
-          <img
-            src="https://placehold.co/312x231"
-            alt="312x231"
-            width="312"
-            height="231"
-          />
-          <h5>Classic Chicken Parmesan</h5>
-          <div class="recipe-card-info">
-            <p><i class="fa-solid fa-clock"></i>19 minutes</p>
-            <p><i class="fa-solid fa-people-group"></i>4 servings</p>
-            <p><i class="fa-solid fa-weight-scale"></i>504 cal</p>
-            <p><i class="fa-solid fa-star"></i>3.0</p>
-            <div class="favorite-and-view-recipe">
-              <i class="fa-regular fa-heart"></i>
-              <button><i class="fa-solid fa-eye"></i>View Recipe</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Remove above code when api call works -->
-      </section>
+      <section class="recipe-results"></section>
       <!-- End Recipe Results Section -->
 
       <section class="favorite-recipes"></section>
+
+      <!-- Recipe Popup Modal -->
+      <section id="recipeModal" class="modal">
+        <div class="modal-content">
+          <div id="modalBody">
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
