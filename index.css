@@ -307,58 +307,31 @@ header
     color: white;
 }
 
-.find-recipes-general
+.find-recipes-cuisine-row button.find-recipes-cuisine-row-button-active
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.find-recipes-general input[type="text"]
-{
-    color: rgb(187, 185, 185);
-}
-
-#find-recipes-gen
-{
-    width: 600px;
-    border: 2px solid rgb(190, 188, 188);
-    background-color: rgb(253, 253, 253);
-    border-radius: 8px;
-    padding: 0.5rem;
-}
-
-#find-recipes-gen:focus
-{
-    border: 2px solid rgb(206, 103, 20);
-    background-color: white;
-    outline: none;
-}
-
-#find-recipes-gen-button
-{
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: rgb(206, 103, 20);
     color: white;
-    margin-left: 1rem;
-    font-weight: bold;
-    border: 1px solid rgb(206, 103, 20);
-    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: rgb(206, 103, 20) !important;
+    border: 1px solid rgb(206, 103, 20) !important;
 }
 
-#find-recipes-gen-button:hover
+.find-recipes-cuisine-row button.find-recipes-cuisine-row-button-active i
 {
-    background-color: white;
-    color: rgb(66, 66, 66);
-    border: 1px solid rgb(66, 66, 66);
+    color: white;
 }
 
-#find-recipes-gen-button i
+.find-recipes-dietary button.find-recipes-dietary-button-active
 {
-    margin-right: 0.5rem;
+    color: white;
+    background-color: rgb(206, 103, 20) !important;
+    border: 1px solid rgb(206, 103, 20) !important;
 }
+
+.find-recipes-dietary button.find-recipes-dietary-button-active i
+{
+    color: white;
+}
+
+
 /* End Find Your Perfect Recipe Section */
 
 
